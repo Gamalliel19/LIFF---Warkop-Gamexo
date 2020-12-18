@@ -100,4 +100,7 @@ h3.page-title {
   #app, .navbar {
     width: 100%
   }
+  img{
+    width: 40px;
+  }
 }

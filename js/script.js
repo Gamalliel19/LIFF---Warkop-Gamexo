@@ -128,7 +128,7 @@ function loadOrder(){
 								<div class="card-body">
 									<div class="row">
 										<div class="col-3">
-											<img src="img/menu/`+order[i].menu[0].foto+`" class="img-fluid">
+											<img src="img/`+order[i].menu[0].foto+`" class="img-fluid">
 										</div>
 										<div class="col-9">
 											<h5 class="menu-name">`+order[i].menu[0].nama+`</h5>
