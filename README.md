@@ -5,5 +5,5 @@ Aplikasi sederhana berbasis website yang menerapkan design mobile first agar leb
 ## LIFF
 LINE Front-end Framework (LIFF) merupakan sebuah platform yang memungkinkan untuk membuat aplikasi web dapat berjalan di dalam aplikasi LINE. Saat LIFF menjalankan sebuah aplikasi web, kita tidak perlu keluar dari ruang obrolan.
 
-## Screen Shot
+## Demo App
 ![alt text](https://github.com/Gamalliel19/LIFF---Warkop-Gamexo/blob/main/gamexoApps.gif)
