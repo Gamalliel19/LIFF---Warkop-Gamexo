@@ -47,10 +47,13 @@ h3.page-title {
   font-weight: bold;
   border-radius: 5px;
 }
-.menu-name {
-  font-size: 1em;
+.nama-menu {
+  font-size: 0.8em;
   text-transform: uppercase;
   font-weight: bold;
+}
+.menu-price{
+  font-size: 0.5em;
 }
 .menu.card .card-body{
   padding: 0.5rem;

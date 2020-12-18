@@ -31,17 +31,16 @@ function loadMenu(){
 	for (i in data_menu){
 		var menu_item = `
 		<div class="bg-white mb-3 col-11 mx-auto rounded my-2 p-3" onClick="addToCart(`+data_menu[i].id+`)">
-		<div class="row no-gutters">
-			<div class="col-sm-4">
-			<img src="img/`+data_menu[i].foto+`" class="card-img img-fluid" alt="card image">
+			<div class="d-flex justify-content-start align-items-center">
+				<div class="col-sm-4">
+					<img src="img/`+data_menu[i].foto+`" style="width: 100px" class="card-img img-fluid" alt="card image">
+				</div>
+				<div class="col-sm-8">
+						<p class="nama-menu">`+data_menu[i].nama+`</p>
+						<span class="menu-price">Rp. `+formatRupiah(data_menu[i].harga)+`</span>
+					
+				</div>
 			</div>
-			<div class="col-sm-8">
-			<div class="card-body">
-				<h5 class="menu-name">`+data_menu[i].nama+`</h5>
-				<span class="menu-price">Rp `+formatRupiah(data_menu[i].harga)+`</span>
-			</div>
-			</div>
-		</div>
 		</div>
 		`
 		if(data_menu[i].kategori == 'food'){
