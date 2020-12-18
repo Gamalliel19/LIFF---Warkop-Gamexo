@@ -6,6 +6,8 @@ Aplikasi sederhana berbasis website yang menerapkan design mobile first agar leb
 LINE Front-end Framework (LIFF) merupakan sebuah platform yang memungkinkan untuk membuat aplikasi web dapat berjalan di dalam aplikasi LINE. Saat LIFF menjalankan sebuah aplikasi web, kita tidak perlu keluar dari ruang obrolan.
 
 ## Demo App
-Link URL : line://app/1655321390-Ro94GEOj
-Endpoint URL : https://gamexoapps.herokuapp.com
+
+Link URL : [a link](line://app/1655321390-Ro94GEOj) 
+</br>
+Endpoint URL : [a link](https://gamexoapps.herokuapp.com)
 ![alt text](https://github.com/Gamalliel19/LIFF---Warkop-Gamexo/blob/main/gamexoApps.gif)
