@@ -67,13 +67,13 @@ function loadCart(){
 							<div class="col-6 pr-0">
 								<span class="menu-name">`+cart[i].nama+`</span>
 							</div>
-							<div class="col-3 px-0">
+							<div class="col-4 px-0">
 								<a href="javascript:void(0)" class="btn btn-sm btn-warning btn-cart-action" title="Kurangi" onClick="minNumCart(`+cart[i].id+`)"><i class="fa fa-minus"></i></a>
 								<span class="px-1">`+cart[i].jumlah+`</span>
-								<a href="javascript:void(0)" class="btn btn-sm btn-success btn-cart-action" title="Tambah" onClick="addNumCart(`+cart[i].id+`)"><i class="fa fa-plus"></i></a>
+								<a href="javascript:void(0)" class="btn btn-sm btn-warning btn-cart-action" title="Tambah" onClick="addNumCart(`+cart[i].id+`)"><i class="fa fa-plus"></i></a>
 								<a href="javascript:void(0)" class="btn btn-sm btn-danger btn-cart-action" title="Hapus" onClick="deleteCart(`+cart[i].id+`)"><i class="fa fa-trash"></i></a>
 							</div>
-							<div class="col-3 pl-0 text-right">
+							<div class="col-2 pl-0 text-right">
 								`+formatRupiah(nominal)+`
 							</div>
 						</div>`
