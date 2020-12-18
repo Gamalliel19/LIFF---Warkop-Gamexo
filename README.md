@@ -10,4 +10,5 @@ LINE Front-end Framework (LIFF) merupakan sebuah platform yang memungkinkan untu
 Link URL : [a link](line://app/1655321390-Ro94GEOj) 
 </br>
 Endpoint URL : [a link](https://gamexoapps.herokuapp.com)
+</br>
 ![alt text](https://github.com/Gamalliel19/LIFF---Warkop-Gamexo/blob/main/gamexoApps.gif)
