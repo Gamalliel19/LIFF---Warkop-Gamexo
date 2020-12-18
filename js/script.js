@@ -30,7 +30,7 @@ function loadMenu(){
 	var data_drink = ''
 	for (i in data_menu){
 		var menu_item = `
-		<div class="bg-white shadow mb-3 col-11 mx-auto rounded my-2 p-3" onClick="addToCart(`+data_menu[i].id+`)">
+		<div class="bg-white mb-3 col-11 mx-auto rounded my-2 p-3" onClick="addToCart(`+data_menu[i].id+`)">
 		<div class="row no-gutters">
 			<div class="col-sm-4">
 			<img src="img/`+data_menu[i].foto+`" class="card-img img-fluid" alt="card image">
@@ -405,7 +405,7 @@ function clearTransaction(){
 	localStorage.removeItem('cart')
 	localStorage.removeItem('order')
 
-	$("#modal-message").html('Data transaksi berhasil dihapus')
+	$("#modal-message").html('Riwayat pesanan berhasil dihapus')
 	$("#modalAlert").modal('show')
 }
 
