@@ -311,7 +311,7 @@ function addOrder(){
 		// Jhonarendra membuat pesanan baru! Burger 2, Pancake 3, Sprite 4 dengan total pesanan Rp 200.000
 		var msg_order = ''
 		if (liff.isLoggedIn()) {
-			msg_order += 'Terima kasih! ' + user.displayName + ' Pesanan kamu akan segera diproses '
+			msg_order += 'Terima kasih! ' + user.displayName + ' Pesanan kamu akan segera diproses. '
 		} else {
 			msg_order += 'Anda memesan '
 		}
