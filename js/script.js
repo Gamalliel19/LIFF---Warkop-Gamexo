@@ -355,6 +355,14 @@ function addOrder(){
 	}
 }
 
+function clearTransaction(){
+	localStorage.removeItem('cart')
+	localStorage.removeItem('order')
+
+	$("#modal-message").html('Riwayat pesanan berhasil dihapus')
+	$("#modalAlert").modal('show')
+}
+
 function showOrder(id){
 	setPage('order-detail')
 	var order = JSON.parse(localStorage.getItem('order'))
@@ -400,14 +408,6 @@ function showOrder(id){
 	$("#total-bayar-order-detail").html(formatRupiah(total_bayar))
 }
 
-function clearTransaction(){
-	localStorage.removeItem('cart')
-	localStorage.removeItem('order')
-
-	$("#modal-message").html('Riwayat pesanan berhasil dihapus')
-	$("#modalAlert").modal('show')
-}
-
 function liffOpenWindow(){
 	if (!liff.isInClient()) {
 		$("#modal-message").html('Fungsi ini tidak tersedia pada browser eksternal')
@@ -446,6 +446,26 @@ function liffLogout(){
 		}
 	    
 	}
+}
+
+function formatRupiah(angka){
+    var angka = angka.toString()
+
+    var number_string = angka.replace(/[^,\d]/g, '').toString(),
+        split = number_string.split('.'),
+        sisa = split[0].length % 3,
+        rupiah = split[0].substr(0, sisa),
+        ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+    // tambahkan titik jika yang di input sudah menjadi angka ribuan
+    if (ribuan) {
+        separator = sisa ? '.' : '';
+        rupiah += separator + ribuan.join('.');
+    }
+
+    
+    rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+    return rupiah
 }
 
 function setPage(menu) {
@@ -501,26 +521,6 @@ function setPage(menu) {
         $('#nav').hide()
         $('#order-btn').hide()
     }
-}
-
-function formatRupiah(angka){
-    var angka = angka.toString()
-
-    var number_string = angka.replace(/[^,\d]/g, '').toString(),
-        split = number_string.split('.'),
-        sisa = split[0].length % 3,
-        rupiah = split[0].substr(0, sisa),
-        ribuan = split[0].substr(sisa).match(/\d{3}/gi);
-
-    // tambahkan titik jika yang di input sudah menjadi angka ribuan
-    if (ribuan) {
-        separator = sisa ? '.' : '';
-        rupiah += separator + ribuan.join('.');
-    }
-
-    
-    rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-    return rupiah
 }
 
 function numToMonth(bulan) {
